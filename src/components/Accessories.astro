@@ -3,32 +3,33 @@ import Section from "./Section.astro"
 ---
 
 <Section
-  title="Model Y"
-  subtitle="Concertar una prueba de conducción"
+  title="Accesorios"
+  subtitle=""
   color="black"
-  id="model-y"
+  id="accesorios"
+  showFooterContent="true"
 >
   <div slot="footer" class="gap-x-6 flex mx-auto">
     <a
-      class="border-[3px] border-gray-600 bg-gray-600 text-sm rounded font-medium text-white px-12 py-2 inline-block transition-colors hover:border-gray-500 hover:bg-gray-500"
+      class="border-[3px] border-black bg-black text-sm rounded font-medium text-white px-12 py-2 inline-block transition-colors duration-300 hover:border-gray-800 hover:bg-gray-800"
       href="#"
     >
-      Explorar inventario</a
+      Comprar ahora</a
     >
-    <a
+    <!-- <a
       class="bg-white text-sm rounded font-medium px-12 py-2 transition-colors hover:bg-black hover:text-white inline-flex justify-center items-center text-black"
       href="#"
     >
-      Pedido personalizado</a
-    >
+      Saber más</a
+    > -->
   </div>
 
   <img
     slot="background"
-    alt="Model Y"
-    class="h-full w-full object-cover object-center bg-image"
-    src="model-y.avif"
-    id="bg-image-modely"
+    alt="Accesorios"
+    class="h-full w-full object-cover object-center"
+    src="accessories.avif"
+    id="bg-image-accessories"
   />
 </Section>
 
@@ -45,12 +46,12 @@ import Section from "./Section.astro"
   }
 
   let imageElement = document.querySelector(
-    "#bg-image-modely"
+    "#bg-image-accessories"
   ) as HTMLImageElement
 
   if (isEdge()) {
-    imageElement.src = "model-y.webp"
+    imageElement.src = "accessories.webp"
   } else {
-    imageElement.src = "model-y.avif"
+    imageElement.src = "accessories.avif"
   }
 </script>
