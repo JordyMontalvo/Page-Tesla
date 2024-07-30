@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Landingheader from '../components/Landingheader.astro';
+import Hero from '../components/Hero.astro';
+import Chargehero from '../components/Chargehero.astro';
+---
+
+<Layout title="Tesla el mejor coche .">
+	<Landingheader />
+	<main class="snap-y snap:mandatory relative w-full h-screen overflow-auto">
+<div class="snap-center">
+<Hero />
+	</div>
+	<div class="snap-center">
+		<Hero />
+			</div>
+				<div class="snap-center">
+						<Chargehero />
+							</div>
+
+	</main>
+</Layout>
